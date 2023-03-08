@@ -66,4 +66,12 @@
 
 // console.log(array.join(', '));
 
-let array = [1, 2, 3, 4, 5, 6, 7];
+// let array = [1, 2, 3, 4, 5, 6, 7];
+
+let array = [3, 4, 6, 1, 2, 5, 7];
+
+// array.sort((a, b) => a - b); // in-place
+
+array.sort((a, b) => b - a);
+
+console.log(array);
