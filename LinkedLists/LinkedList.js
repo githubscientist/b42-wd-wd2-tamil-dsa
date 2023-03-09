@@ -82,12 +82,32 @@ class LinkedList{
 
     // deletes the head node or the first node of the linked list
     shift() {
-        
+        if (this.head == null) {
+            console.log('shift not possible');
+        } else {
+            this.head = this.head.next;
+        }
     }
 
     // print the linked list in reverse
+    // using recursion
     reversePrint() {
+        let stack = [];
+        let reverseNodes = [];
         
+        let thead = this.head;
+
+        while (thead != null) {
+            stack.push(thead.data);
+            thead = thead.next;
+        }
+
+        while (stack.length) {
+            reverseNodes.push(stack[stack.length - 1]);
+            stack.pop();
+        }
+
+        console.log(reverseNodes);
     }
 
     print() {
@@ -116,7 +136,46 @@ list.push(7);
 
 list.unshift(2);
 list.unshift(1);
+list.shift();
+list.shift();
 
 // console.log(list.length());
 
-list.print();
+// list.print();
+list.reversePrint();
+
+/*
+    list = 
+
+    LinkedList {
+        head: Node { 
+            data: 1, 
+            next: Node { 
+                data: 2, 
+                next: Node {
+                    data: 3,
+                    next: Node {
+                        data: 4,
+                        next: Node {
+                            data: 5,
+                            next: Node {
+                                data: 6,
+                                next: Node {
+                                    data: 7,
+                                    next: null
+                                }
+                            }
+                        }
+                    }
+                } 
+            } 
+        }
+    }
+
+    thead = list.head
+
+    thead != null
+        thead = thead.next
+
+   null
+*/
