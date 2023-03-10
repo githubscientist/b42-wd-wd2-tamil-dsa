@@ -1,0 +1,57 @@
+Arrays
+Strings
+LinkedList
+    - singly
+    - doubly
+    - circularly
+Stacks
+Recursion
+
+
+----------
+
+DataStructures:
+
+Queues
+Priority Queues
+Trees
+    - Binary Trees
+        - traversals    
+            - inorder
+            - preorder
+            - postorder
+    - Binary Search Trees
+    - AVL Trees
+Graphs
+    - graph representations
+        - Adjaceny Matrix
+        - Adjacency List
+    - graph traversals
+        - bfs (breadth first search)
+        - dfs (depth first search)
+    - Shortest Path
+        - Dijikstra's algorithm
+
+
+Algorithms:
+
+Sorting Algorithms:
+    - Bubble Sort
+    - Selection Sort
+    - Insertion Sort
+    - Quick Sort
+    - Merge Sort
+    - Bucket Sort
+    - Radix Sort
+    - Counting Sort
+
+Searching Algorithms:
+    - Linear Search
+    - Binary Search
+    - Ternary Search
+
+Greedy Algorithms
+Divide and Conquer
+Dynamic Programming
+Backtracking
+Hashing
