@@ -26,3 +26,8 @@
 
 // console.log(word.split(''));
 
+let word = 'g(u)())(vi)';
+let index = 6;
+
+console.log(word.slice(0, index) + word.slice(index+1, ));
+
